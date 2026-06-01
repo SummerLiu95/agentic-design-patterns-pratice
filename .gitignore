@@ -1,3 +1,6 @@
 node_modules
 dist
 .trae/
+.env
+.env.test
+.idea/
