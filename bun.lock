@@ -12,6 +12,17 @@
         "typescript": "^6.0.3",
       },
     },
+    "apps/agent-parallelization": {
+      "name": "@agentic-demo/agent-parallelization",
+      "dependencies": {
+        "@langchain/core": "^1.1.48",
+        "@langchain/openai": "^1.4.7",
+        "dotenv": "^17.4.2",
+      },
+      "devDependencies": {
+        "@types/node": "^25.9.1",
+      },
+    },
     "apps/agent-router": {
       "name": "@agentic-demo/agent-router",
       "dependencies": {
@@ -37,6 +48,8 @@
     },
   },
   "packages": {
+    "@agentic-demo/agent-parallelization": ["@agentic-demo/agent-parallelization@workspace:apps/agent-parallelization"],
+
     "@agentic-demo/agent-router": ["@agentic-demo/agent-router@workspace:apps/agent-router"],
 
     "@agentic-demo/prompt-chaining": ["@agentic-demo/prompt-chaining@workspace:apps/prompt-chaining"],
