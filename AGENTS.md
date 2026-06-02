@@ -3,8 +3,17 @@
 ## Overall Design
 
 - System architecture -> `ARCHITECTURE.md`
-- Current execution plan -> `docs/exec-plans/2026-05-27-initial-monorepo-setup.md`
+- Execution plan -> `docs/exec-plans/xxx.md`
 - Project overview -> `README.md`
+
+## Overall Workflow Convention
+
+1. Convert the Python code demo to the TypeScript version.
+2. Offer the implementation plan in chat and wait for confirmation before implementation.
+3. Implement the approved plan.
+4. Add an execution plan under `docs/exec-plans/` after the work is finished.
+5. Use the execution-plan filename format `{date}-xxx-xxx`.
+6. Follow the content format used by the existing files in `docs/exec-plans/`.
 
 ## Detailed Docs
 
