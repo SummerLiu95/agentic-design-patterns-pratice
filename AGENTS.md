@@ -10,10 +10,12 @@
 
 1. Convert the Python code demo to the TypeScript version.
 2. Offer the implementation plan in chat and wait for confirmation before implementation.
-3. Implement the approved plan.
-4. Add an execution plan under `docs/exec-plans/` after the work is finished.
-5. Use the execution-plan filename format `{date}-xxx-xxx`.
-6. Follow the content format used by the existing files in `docs/exec-plans/`.
+3. Confirm the plan in chat but there is no need to create a plan file.
+4. Implement the approved plan.
+5. Add an execution plan under `docs/exec-plans/` after the work is finished.
+6. Use the execution-plan filename format `{date}-xxx-xxx.md`.
+7. Follow the content format used by the existing files in `docs/exec-plans/`.
+8. There is no need to update the README.md file.
 
 ## Detailed Docs
 
