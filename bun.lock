@@ -46,6 +46,18 @@
         "@types/node": "^25.9.1",
       },
     },
+    "apps/reflection": {
+      "name": "@agentic-demo/reflection",
+      "dependencies": {
+        "@langchain/core": "^1.1.48",
+        "@langchain/openai": "^1.4.7",
+        "dotenv": "^17.4.2",
+        "zod": "^4.4.3",
+      },
+      "devDependencies": {
+        "@types/node": "^25.9.1",
+      },
+    },
   },
   "packages": {
     "@agentic-demo/agent-parallelization": ["@agentic-demo/agent-parallelization@workspace:apps/agent-parallelization"],
@@ -53,6 +65,8 @@
     "@agentic-demo/agent-router": ["@agentic-demo/agent-router@workspace:apps/agent-router"],
 
     "@agentic-demo/prompt-chaining": ["@agentic-demo/prompt-chaining@workspace:apps/prompt-chaining"],
+
+    "@agentic-demo/reflection": ["@agentic-demo/reflection@workspace:apps/reflection"],
 
     "@biomejs/biome": ["@biomejs/biome@2.4.15", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.4.15", "@biomejs/cli-darwin-x64": "2.4.15", "@biomejs/cli-linux-arm64": "2.4.15", "@biomejs/cli-linux-arm64-musl": "2.4.15", "@biomejs/cli-linux-x64": "2.4.15", "@biomejs/cli-linux-x64-musl": "2.4.15", "@biomejs/cli-win32-arm64": "2.4.15", "@biomejs/cli-win32-x64": "2.4.15" }, "bin": { "biome": "bin/biome" } }, "sha512-j5VH3a/h/HXTKBM50MDMxRCzkeLv9S2XJcW2WgnZT1+xyisi+0bISrXR82gCX+8S9lvK0skEvHJRN+3Ktr2hlw=="],
 
