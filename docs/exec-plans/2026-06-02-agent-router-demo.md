@@ -31,6 +31,14 @@ Convert the Router design-pattern demo from the learning material into a runnabl
 11. Added sample requests and console output showing the request, selected route, and final answer for each demo run.
 12. Verified the new app with focused type checking and a successful runtime execution.
 
+## Data Flow And Verification
+
+- Input: a plain user request string such as "What is a dog?" or "What is a vector store?"
+- Step 1: router prompt asks the model to classify the request into one of the allowed routes using a Zod-backed structured output schema
+- Step 2: RunnableBranch checks the typed route and forwards the original request to the matching specialized branch
+- Step 3: the selected branch answers with a domain-specific response
+- Step 4: the script prints both the chosen route and the final answer so the routing behavior is easy to inspect
+
 ## Files Created
 
 - `apps/agent-router/package.json`

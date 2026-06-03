@@ -32,6 +32,14 @@ Convert the Parallelization design-pattern demo from the learning material into 
 11. Added console output for the input topic, the intermediate parallel results, and the final synthesized result.
 12. Verified the new app with focused type checking and a successful runtime execution.
 
+## Data Flow And Verification
+
+- Input: one topic string such as ice cream or LangChain
+- Step 1: pass the topic into three independent prompt chains in parallel
+- Step 2: collect the outputs as a structured object like { joke, haiku, explanation, topic }
+- Step 3: feed that object into a final synthesis prompt
+- Step 4: print the intermediate parallel outputs and the final combined result
+
 ## Files Created
 
 - `apps/agent-parallelization/package.json`
