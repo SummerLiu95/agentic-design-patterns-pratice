@@ -35,6 +35,19 @@
         "@types/node": "^25.9.1",
       },
     },
+    "apps/agent-tools": {
+      "name": "@agentic-demo/agent-tools",
+      "dependencies": {
+        "@langchain/core": "^1.1.48",
+        "@langchain/openai": "^1.4.7",
+        "dotenv": "^17.4.2",
+        "langchain": "^1.4.2",
+        "zod": "^4.4.3",
+      },
+      "devDependencies": {
+        "@types/node": "^25.9.1",
+      },
+    },
     "apps/prompt-chaining": {
       "name": "@agentic-demo/prompt-chaining",
       "dependencies": {
@@ -63,6 +76,8 @@
     "@agentic-demo/agent-parallelization": ["@agentic-demo/agent-parallelization@workspace:apps/agent-parallelization"],
 
     "@agentic-demo/agent-router": ["@agentic-demo/agent-router@workspace:apps/agent-router"],
+
+    "@agentic-demo/agent-tools": ["@agentic-demo/agent-tools@workspace:apps/agent-tools"],
 
     "@agentic-demo/prompt-chaining": ["@agentic-demo/prompt-chaining@workspace:apps/prompt-chaining"],
 
